@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="main.js"></script>
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact-body">
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">Stepher's Photo Studio</a>
+
+            <ul class="nav-menu">
+                <li class="nav-items">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Our Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Pricing</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!-- <my-header></my-header> -->
+    </header>
+
+    <main>
+        <div class="contact-info">
+            <label class="contact-info">
+                <h1>Our Contact Information</h1>
+            </label><br>
+            <label class="contact-info">
+                <h2>Phone Number: 352-627-3263</h2>
+            </label>
+            <label class="contact-info">
+                <h2></h2>
+            </label><br>
+            <label class="contact-info">
+                <h2>Address</h2>
+            </label>
+            <label class="contact-info">
+                <h2>10338 E Kinetic Drive </h2>
+            </label>
+            <label class="contact-info">
+                <h2>Mesa, AZ 85212</h2>
+            </label><br>
+        </div>
+
+        <section class="single">
+
+            <div class="wrap">
+
+                <article class="single-post">
+
+                    <div class="contact-form">
+
+                        <form method="post" action="https://formspree.io/f/xoqrwqdj" id="contact-form">
+
+                            <div class="contact-form__item">
+                                <label class="contact-info">
+                                    <h2>You can also send us an email</h2>
+                                </label><br>
+                            </div><br>
+
+                            <div class="contact-form__item">
+                                <label class="contact-form__label">Email Address *</label>
+                                <input type="text" name="email" placeholder="Your email address..."
+                                    class="contact-form__input">
+                            </div>
+
+                            <div class="contact-form__item">
+                                <label class="contact-form__label">Name *</label>
+                                <input type="text" name="name" placeholder="Your name..." class="contact-form__input">
+                            </div>
+
+                            <div class="contact-form__item">
+                                <label class="contact-form__label">Message *</label>
+                                <textarea name="message" placeholder="Your message..." rows="10"
+                                    class="contact-form__textarea"></textarea>
+                            </div>
+
+                            <input type="hidden" name="_next" value="/thanks">
+                            <input type="hidden" name="_subject" value="Contact form submission">
+                            <input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha"
+                                val="">
+
+                            <div class="contact-form__item">
+                                <input type="submit" value="Send Message" class="button button--large">
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <my-footer></my-footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
